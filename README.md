@@ -1,4 +1,4 @@
-# EXPERIMENT--01-ALP-FOR-8086
+![Screenshot (56)](https://github.com/user-attachments/assets/e4b36cdf-c92f-4c8a-b2fe-22434faa9181)# EXPERIMENT--01-ALP-FOR-8086
 
 Name : Shanmuga Vasanth M
 
@@ -76,55 +76,153 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
+## Addition of 8 bit ALP 
 ```
- org 100h
- MOV al,11h;
- MOV bl,20h;
- ADD al,bl;
- MOV [6379h],al;
- ret
+org 100h
+
+MOV AX, 5
+MOV BX, 3
+ADD AX, BX
+MOV [0200h], AX
+HLT
+
+ret
 ```
 
 ## Output  
+
+![Screenshot (55)](https://github.com/user-attachments/assets/71338e7c-08be-459c-99e0-0e74ee4b0994)
+
  
-## Subtraction   of 8 bit numbers  ALP 
+## Subtraction of 8 bit numbers  ALP 
  ```
- org 100h
- MOV al,20h;
- MOV bl,[8778h];
- SUB bl,al;
- MOV [8798h],bl;
- ret
+org 100h
+
+MOV AX, 8         
+MOV BX, 3         
+SUB AX, BX
+MOV [0200h], AX
+HLT
+
+ret
 ```
 
 ## Output  
+
+![Screenshot (56)](https://github.com/user-attachments/assets/b8446674-6925-4658-9cb3-5f38ab0568a5)
+
 
 ## Multiplication alp 
  ```
- org 100h
- MOV al,13h;
- MOV bl,2h;
- MUL bl;
- MOV [6063h],bl;
- ret
+org 100h
+
+MOV AX, 2        
+MOV BX, 4         
+MUL BX
+MOV [0200h], AX
+HLT               
+
+ret
+
 ```
 
  ## Output  
 
+ ![Screenshot (57)](https://github.com/user-attachments/assets/c26cf818-3643-4885-a0db-c8a0f1b12d3b)
+
+
 ## Division alp 
  ```
- org 100h
- MOV al,26h;
- MOV bl,[2369h];
- DIV bl;
- MOV [2399h],al;
- ret
+org 100h
+
+MOV AX, 8         
+MOV BX, 2         
+DIV BX            
+MOV [0200h], AX   
+MOV [0202h], DX   
+HLT              
+
+ret
 ```
 
 ## Output  
 
+![Screenshot (58)](https://github.com/user-attachments/assets/019f2ca9-64eb-4d9c-8583-e216c9ff443b)
+
+
+## Programs for logical operators
+## AND
+```
+org 100h         
+
+MOV AL, 0Fh       
+MOV BL, 03h     
+AND AL, BL       
+MOV [0200h], AL  
+HLT               
+
+ret
+```
+
+## Output
+
+![Screenshot (59)](https://github.com/user-attachments/assets/712d3240-46b7-4984-b841-14c90de7b7be)
+
+
+## OR
+```
+org 100h
+          
+MOV AL, 0Fh       
+MOV BL, 03h       
+OR AL, BL         
+MOV [0200h], AL   
+HLT              
+
+ret
+```
+
+## Output
+
+![Screenshot (60)](https://github.com/user-attachments/assets/71c41b0c-a696-4270-96ae-863c28e75de3)
+
+
+## NOT
+```
+org 100h
+
+MOV AL, 0Fh      
+NOT AL            
+MOV [0200h], AL  
+HLT
+               
+ret
+```
+
+## Output
+
+![Screenshot (61)](https://github.com/user-attachments/assets/997cafe1-8539-4669-9a34-c1288ec759a0)
+
+
+## XOR
+```
+org 100h
+
+MOV AL, 0Fh      
+MOV BL, 03h       
+XOR AL, BL        
+MOV [0200h], AL  
+HLT               
+
+ret
+```
+
+## Output
+
+![Screenshot (62)](https://github.com/user-attachments/assets/7d21c529-24b6-4879-8003-8950842d6673)
+
+
 ## Result :
 
-
+Thus, the program was executed on ALP for the fundamental arithmetic and logical operations.
  
