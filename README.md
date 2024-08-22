@@ -1,5 +1,4 @@
-![Screenshot (56)](https://github.com/user-attachments/assets/e4b36cdf-c92f-4c8a-b2fe-22434faa9181)# EXPERIMENT--01-ALP-FOR-8086
-
+# EXPERIMENT--01-ALP-FOR-8086
 Name : Shanmuga Vasanth M
 
 Roll no : 212223040191
